@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Makeup</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Makeup Catalog</h1>
+    </header>
+    <div class="filters">
+        <div class="filter-row">
+            <label for="name">Nome</label>
+            <input id="name" type="text">
+        </div>
+        <div class="filter-row">
+            <label for="brand">Marca</label>
+            <select name="brand" id="brand">
+                <option value="" selected>Todos</option>
+                <option value="almay">almay</options>
+                <option value="alva">alva</options>
+                <option value="anna sui">anna sui</options>
+                <option value="annabelle">annabelle</options>
+                <option value="benefit">benefit</options>
+                <option value="boosh">boosh</options>
+                <option value="burt's bees">burt's bees</options>
+                <option value="butter london">butter london</options>
+                <option value="c'est moi">c'est moi</options>
+                <option value="cargo cosmetics">cargo cosmetics</options>
+                <option value="china glaze">china glaze</options>
+                <option value="clinique">clinique</options>
+                <option value="coastal classic creation">coastal classic creation</options>
+                <option value="colourpop">colourpop</options>
+                <option value="covergirl">covergirl</options>
+                <option value="dalish">dalish</options>
+                <option value="deciem">deciem</options>
+                <option value="dior">dior</options>
+                <option value="dr. hauschka">dr. hauschka</options>
+                <option value="e.l.f.">e.l.f.</options>
+                <option value="essie">essie</options>
+                <option value="fenty">fenty</options>
+                <option value="glossier">glossier</options>
+                <option value="green people">green people</options>
+                <option value="iman">iman</options>
+                <option value="l'oreal">l'oreal</options>
+                <option value="lotus cosmetics usa">lotus cosmetics usa</options>
+                <option value="maia's mineral galaxy">maia's mineral galaxy</options>
+                <option value="marcelle">marcelle</options>
+                <option value="marienatie">marienatie</options>
+                <option value="maybelline">maybelline</options>
+                <option value="milani">milani</options>
+                <option value="mineral fusion">mineral fusion</options>
+                <option value="misa">misa</options>
+                <option value="mistura">mistura</options>
+                <option value="moov">moov</options>
+                <option value="nudus">nudus</options>
+                <option value="nyx">nyx</options>
+                <option value="orly">orly</options>
+                <option value="pacifica">pacifica</options>
+                <option value="penny lane organics">penny lane organics</options>
+                <option value="physicians formula">physicians formula</options>
+                <option value="piggy paint">piggy paint</options>
+                <option value="pure anada">pure anada</options>
+                <option value="rejuva minerals">rejuva minerals</options>
+                <option value="revlon">revlon</options>
+                <option value="sally b's skin yummies">sally b's skin yummies</options>
+                <option value="salon perfect">salon perfect</options>
+                <option value="sante">sante</options>
+                <option value="sinful colours">sinful colours</options>
+                <option value="smashbox">smashbox</options>
+                <option value="stila">stila</options>
+                <option value="suncoat">suncoat</options>
+                <option value="w3llpeople">w3llpeople</options>
+                <option value="wet n wild">wet n wild</options>
+                <option value="zorah">zorah</options>
+                <option value="zorah biocosmetiques">zorah biocosmetiques</options>
+            </select>
+        </div>
+        <div class="filter-row">
+            <label for="productType">Tipo</label>
+            <select name="productType" id="productType">
+                <option value="" selected>Todos</option>
+                <option value="bronzer">bronzer</options>
+                <option value="blush">blush</options>
+                <option value="lip_liner">lip_liner</options>
+                <option value="foundation">foundation</options>
+                <option value="eyeshadow">eyeshadow</options>
+                <option value="eyeliner">eyeliner</options>
+                <option value="nail_polish">nail_polish</options>
+                <option value="lipstick">lipstick</options>
+                <option value="mascara">mascara</options>
+                <option value="eyebrow">eyebrow</options>
+            </select>
+        </div>
+        <div class="filter-row">
+            <label for="order">Filtre Por</label>
+            <select name="order" id="order">
+                <option value="rating" selected>Melhores Avaliados</option>
+                <option value="menores-precos">Menores Preços</option>
+                <option value="maiores-precos">Maiores Preços</option>
+                <option value="nome">A-Z</option>
+                <option value="nome-desc">Z-A</option>
+            </select>
+        </div>
+        <button class="filter-submit" onclick="filterProducts()">Buscar</button>
+    </div>
+    <div class="products-container">
+    </div>    
+
+    <script src="./index.js"></script>
+</body>
+</html>
